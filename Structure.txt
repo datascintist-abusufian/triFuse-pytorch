@@ -1,0 +1,35 @@
+TriFuse-SRNet/
+├── configs/
+│   └── triFuse_srnet.yaml
+├── models/
+│   ├── __init__.py
+│   ├── encoder.py
+│   ├── transformer_expert.py
+│   ├── cnn_expert.py
+│   ├── sr_branch.py
+│   ├── hmna.py
+│   ├── dynamic_mix.py
+│   └── triFuse_srnet.py
+├── datasets/
+│   ├── __init__.py
+│   ├── acdc.py
+│   └── mscmrseg.py
+├── utils/
+│   ├── __init__.py
+│   ├── metrics.py
+│   ├── losses.py
+│   └── stats.py
+├── scripts/
+│   ├── preprocess.py
+│   └── statistical_analysis.py
+├── splits/
+│   ├── acdc_train.txt
+│   ├── acdc_val.txt
+│   ├── acdc_test.txt
+│   ├── mscmrseg_train.txt
+│   ├── mscmrseg_val.txt
+│   └── mscmrseg_test.txt
+├── train.py
+├── eval.py
+├── eval_all.py
+└── requirements.txt

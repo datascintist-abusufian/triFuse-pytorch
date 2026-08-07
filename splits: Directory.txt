@@ -1,0 +1,3 @@
+patient001
+patient002
+... (70 patients)

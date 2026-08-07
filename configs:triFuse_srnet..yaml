@@ -1,0 +1,57 @@
+# TriFuse-SRNet Configuration
+model:
+  name: "TriFuse-SRNet"
+  in_channels: 1
+  num_classes: 3  # RV, MYO, LV (background is not counted)
+  embed_dim: 64
+  
+  encoder:
+    depths: [2, 2, 3, 3]
+    channels: [64, 128, 256, 512, 1024]
+    kernel_size: 3
+    stride: 2
+  
+  transformer_expert:
+    depths: [2, 2, 6, 2]
+    num_heads: 8
+    embed_dims: [96, 192, 384, 768]
+    window_size: 8
+  
+  cnn_expert:
+    decoder_channels: [256, 128, 64, 32]
+  
+  sr_branch:
+    projected_width: 256
+    num_blocks: 4
+    dilation_schedule: [1, 2, 4, 8]
+  
+  hmna:
+    pooling_kernels: [2, 4, 8]
+    dilation_rates: [1, 2, 4, 8]
+    compressed_channels: 64
+    local_kernels: [3, 5, 7, 9]
+
+training:
+  batch_size: 8
+  num_epochs: 100
+  learning_rate: 1e-3
+  weight_decay: 5e-4
+  warmup_epochs: 5
+  lambda_aux: 0.3
+  lambda_rev: 0.2
+  pseudo_threshold: 0.8
+  num_workers: 4
+  
+  augmentation:
+    rotation: 10
+    scaling: [0.85, 1.15]
+    flip_prob: 0.5
+    elastic_deform_prob: 0.5
+    elastic_alpha: 50
+    elastic_sigma: 5
+
+data:
+  input_size: 256
+  spacing: 1.5
+
+seeds: [42, 123, 456, 789, 1012]
