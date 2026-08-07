@@ -18,3 +18,10 @@ python eval.py --checkpoint checkpoints/acdc_42_best.pth --dataset acdc --output
 Statistical Analysis:
 bash
 python scripts/statistical_analysis.py --method1 results/acdc/ --method2 results/cyclemix/ --dataset acdc --output comparison.csv
+
+
+# TriFuse-SRNet: Dynamic Multi-Expert Fusion With Structural Recovery for Scribble-Supervised Cardiac MRI Segmentation
+
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.1.0-EE4C2C.svg)](https://pytorch.org/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![Paper](https://img.shields.io/badge/Paper-TMI%202026-red.svg)](https://ieeexplore.ieee.org/)
