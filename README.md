@@ -80,8 +80,6 @@ utils/          losses, metrics, statistics
 train.py        training entry point
 ```
 
-Note: the current upload stores these files flat, with the folder name encoded in the filename (for example `models:encoder.py` rather than `models/encoder.py`). Reorganising them into real directories is the next housekeeping step; the commands above assume the layout shown here.
-
 ## Related work
 
 This implementation sits alongside earlier work on hybrid architectures for cardiac MRI: *Hybrid deep learning for computational precision in cardiac MRI segmentation: integrating autoencoders, CNNs and RNNs for enhanced structural analysis*, Computers in Biology and Medicine 186 (2025) 109597.
