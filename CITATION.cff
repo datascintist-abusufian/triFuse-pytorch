@@ -7,8 +7,10 @@ authors:
   - family-names: "Sufian"
     given-names: "Md Abu"
     affiliation: "University of East London"
+    orcid: "https://orcid.org/0009-0007-3503-6942"
 repository-code: "https://github.com/datascintist-abusufian/triFuse-pytorch"
 url: "https://github.com/datascintist-abusufian/triFuse-pytorch"
+license: Apache-2.0
 keywords:
   - medical imaging
   - cardiac MRI
