@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "TriFuse-SRNet: dynamic multi-expert fusion with structural recovery for scribble-supervised cardiac MRI segmentation"
+abstract: "PyTorch reference implementation of TriFuse-SRNet for scribble-supervised cardiac MRI segmentation, with training, evaluation and statistical-comparison scripts for the ACDC and MSCMRseg benchmarks."
+type: software
+authors:
+  - family-names: "Sufian"
+    given-names: "Md Abu"
+    affiliation: "University of East London"
+repository-code: "https://github.com/datascintist-abusufian/triFuse-pytorch"
+url: "https://github.com/datascintist-abusufian/triFuse-pytorch"
+keywords:
+  - medical imaging
+  - cardiac MRI
+  - image segmentation
+  - weakly supervised learning
+  - pytorch
